@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Cars from "./pages/Cars";
 import MyBookings from "./pages/MyBookings";
 import Cardetails from "./pages/Cardetails";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -16,8 +17,9 @@ const App = () => {
     <Route path="/" element={<Home/>} />
     <Route path="/cars" element={<Cars/>} />
     <Route path="/my-bookings" element={<MyBookings/>} />
-    <Route path="/car-details" element={<Cardetails/>} />
+    <Route path="/car-details/:id" element={<Cardetails/>} />
   </Routes>
+  {!isOwnerPath && <Footer/>}
   </>
   )
 };

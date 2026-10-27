@@ -4,7 +4,7 @@ import { assets, cityList } from "../assets/assets";
 const Hero = () => {
   const [pickupLocation, setPickupLocation] = useState("");
   return (
-    <div className="h-screen flex flex-col items-center justify-center gap-14bg-light text-center">
+    <div className="h-screen flex flex-col items-center justify-center gap-14 bg-light text-center">
       <h1 className="text-4xl md:text-5xl font-semibold">
         Welcome to Our Car Rental Service
       </h1>
