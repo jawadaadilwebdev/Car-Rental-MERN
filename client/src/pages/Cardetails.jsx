@@ -16,6 +16,10 @@ const handleSubmit = (e)=>{
   useEffect(()=>{
     setCar(dummyCarData.find(car=>car._id===id))
   },[id])
+
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return car ? (
     <div className='px-6 md:px-16 lg:px-24 xl:px-32 mt-16'>
       <button className='flex items-center gap-2 mb-6 text-gray-500 cursor-pointer' onClick={()=>navigate(-1)}>
