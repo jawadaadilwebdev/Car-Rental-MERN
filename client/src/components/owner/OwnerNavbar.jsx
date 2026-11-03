@@ -1,7 +1,6 @@
 import React from 'react'
-import { dummyUserData } from "../assets/assets"
+import { dummyUserData ,assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
-import assets from '../assets/assets'
 
 const OwnerNavbar = () => {
     const user = dummyUserData;
@@ -9,8 +8,9 @@ const OwnerNavbar = () => {
     <div className="flex items-center justify-between px-6 md:px-10 py-4 text-gray-500 border-b border-border relative ransition-all duration-300">
         <Link to='/'>
         <img src={assets.logo} alt="" className='h-7'/>
-        <p>Welcome, {user.name || "Owner"}</p>
         </Link>
+        <p>Welcome, {user.name || "Owner"}</p>
+        
     </div>
   )
 }
