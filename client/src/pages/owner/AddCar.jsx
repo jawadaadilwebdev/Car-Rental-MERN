@@ -142,12 +142,17 @@ const AddCar = () => {
             </label>
             <textarea
               id="description"
-              placeholder="Enter car description"
+              placeholder="e.g. This is a well-maintained car with low mileage and excellent fuel efficiency."
               className="px-3 py-2 mt-1 border border-border rounded-md outline-none"
               value={car.description}
+              rows={5}
               onChange={(e) => setCar({ ...car, description: e.target.value })}
             ></textarea>
         </div>
+     <button className="flex items-center gap-2 px-4 py-2.5 bg-primary text-white rounded-md font-medium w-max cursor-pointer">
+          <img src={assets.tick_icon} alt="" />
+          List Your Car
+        </button>
       </form>
     </div>
   );
